@@ -1,9 +1,11 @@
-type Ppby {
+type Person {
+    id: String!
     name: String!
     age: Int!
     gender: String!
 }
 
 type Query {
-    person: Ppby!
+    people: [Person]!
+    person(id: String!): Person
 }

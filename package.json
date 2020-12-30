@@ -12,7 +12,9 @@
     "author": "ppby",
     "license": "MIT",
     "dependencies": {
-        "graphql-yoga": "1.18.3"
+        "faker": "5.1.0",
+        "graphql-yoga": "1.18.3",
+        "shortid": "2.2.16"
     },
     "devDependencies": {
         "babel-cli": "6.26.0",
