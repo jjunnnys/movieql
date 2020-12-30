@@ -1,12 +1,12 @@
-import { getById, people } from './db';
+import { getMovies, getById, addMovie } from './db';
 
 const resolvers = {
     Query: {
-        people: () => people,
-        person: (_, { id }) => {
-            // 처음 파라미터는 현재 객체를 보냄
-            return getById(id);
-        },
+        movies: () => getMovies(),
+        movie: (_, { id }) => getById(id),
+    },
+    Mutation: {
+        addMovie: (_, { name, score }) => addMovie(name, score),
     },
 };
 
