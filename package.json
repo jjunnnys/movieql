@@ -12,6 +12,7 @@
     "author": "ppby",
     "license": "MIT",
     "dependencies": {
+        "axios": "0.21.1",
         "faker": "5.1.0",
         "graphql-yoga": "1.18.3",
         "shortid": "2.2.16"
